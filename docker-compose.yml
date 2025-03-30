@@ -1,0 +1,25 @@
+version: "2"
+services:
+  creo-drupal:
+    container_name: "drupal"
+    build: .
+    volumes:
+      - ./web/:/var/www/html
+      - ./.env:/var/www/env/.env         # Reference .env in html folder
+      - ./logs/apache2:/var/log/apache2
+      - ./logs/httpd:/var/log/httpd
+    ports:
+      - 80
+    external_links:
+      - creo-local-database:mysql
+    labels:
+      - "traefik.backend=drupal.localhost"
+      - "traefik.frontend.rule=Host:drupal.localhost"
+      - "traefik.enable=true"
+      - "traefik.port=80"
+      - "traefik.frontend.entryPoints=http, https"
+    networks:
+      - creo-local-network
+networks:
+  creo-local-network:
+    external: true

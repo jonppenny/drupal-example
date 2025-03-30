@@ -1,0 +1,18 @@
+administer recipe types:
+  title: 'Administer recipe types'
+  description: 'Maintain the types of recipe entity.'
+  restrict access: true
+view recipe:
+  title: 'View recipe'
+edit recipe:
+  title: 'Edit recipe'
+delete recipe:
+  title: 'Delete recipe'
+create recipe:
+  title: 'Create recipe'
+view recipe revision:
+  title: 'View recipe revision'
+revert recipe revision:
+  title: 'Revert recipe revision'
+delete recipe revision:
+  title: 'Delete recipe revision'

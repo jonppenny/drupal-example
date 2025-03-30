@@ -1,0 +1,13 @@
+recipe.index:
+  path: '/recipes-listing'
+  defaults:
+    _controller: '\Drupal\recipe\Controller\RecipeController::index'
+  requirements:
+    _permission: 'access content'
+
+recipe.show:
+  path: '/recipe/{id}'
+  defaults:
+    _controller: '\Drupal\recipe\Controller\RecipeController::show'
+  requirements:
+    _permission: 'access content'

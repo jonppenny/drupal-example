@@ -1,0 +1,11 @@
+entity.recipe_type.collection:
+  title: 'Recipe types'
+  description: 'Manage and CRUD actions on Recipe type.'
+  parent: system.admin_structure
+  route_name: entity.recipe_type.collection
+
+entity.recipe.collection:
+  title: 'Recipes'
+  description: 'List of recipes.'
+  route_name: entity.recipe.collection
+  parent: system.admin_content

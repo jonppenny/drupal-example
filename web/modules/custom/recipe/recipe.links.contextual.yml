@@ -1,0 +1,10 @@
+entity.recipe.edit_form:
+  route_name: entity.recipe.edit_form
+  group: recipe
+  title: 'Edit'
+
+entity.recipe.delete_form:
+  route_name: entity.recipe.delete_form
+  group: recipe
+  title: 'Delete'
+  weight: 10

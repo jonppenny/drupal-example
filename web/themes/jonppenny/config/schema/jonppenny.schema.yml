@@ -1,0 +1,8 @@
+# Schema for the configuration files of the JonPPenny theme.
+jonppenny.settings:
+  type: theme_settings
+  label: 'JonPPenny settings'
+  mapping:
+    example:
+      type: string
+      label: Example

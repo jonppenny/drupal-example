@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - recipe
+id: recipe_delete_action
+label: 'Delete recipes'
+type: recipe
+plugin: entity:delete_action:recipe
+configuration: {  }
