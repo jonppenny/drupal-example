@@ -67,3 +67,4 @@
 *-lock.json
 /logs
 node_modules
+*.idea
