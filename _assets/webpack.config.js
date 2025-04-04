@@ -15,7 +15,7 @@ module.exports = (env) => {
     paths: {
       root: rootPath,
       assets: path.join(rootPath, "./"),
-      dist: path.join(rootPath, "../web/themes/jonppenny/dist")
+      dist: path.join(rootPath, "../web/themes/custom/jonppenny/dist")
     },
     enabled: {
       sourceMaps: !isProduction,
