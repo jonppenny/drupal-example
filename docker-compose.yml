@@ -3,6 +3,7 @@ services:
   creo-drupal:
     container_name: "drupal"
     build: .
+    user: "${UID}:${GID}"
     volumes:
       - ./web/:/var/www/html
       - ./.env:/var/www/env/.env         # Reference .env in html folder
@@ -20,6 +21,9 @@ services:
       - "traefik.frontend.entryPoints=http, https"
     networks:
       - creo-local-network
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
 networks:
   creo-local-network:
     external: true
