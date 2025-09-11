@@ -1,0 +1,5 @@
+name: 'Batch Example'
+type: module
+description: 'Example batch import'
+package: Custom
+core_version_requirement: ^10 || ^11

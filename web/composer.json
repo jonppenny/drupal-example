@@ -20,9 +20,11 @@
         "drupal/core-project-message": "^11.1.4",
         "drupal/core-recommended": "^11.1.4",
         "drupal/core-vendor-hardening": "^11.1.4",
-        "drush/drush": "^13.3.3",
+        "drupal/menu_item_extras": "^3.1",
         "drupal/paragraphs": "^1.0",
+        "drupal/search_api": "^1.38",
         "drupal/twig_tweak": "3.*",
+        "drush/drush": "^13.3.3",
         "vlucas/phpdotenv": "^v5.6.1"
     },
     "conflict": {

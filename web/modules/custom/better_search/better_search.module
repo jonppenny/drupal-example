@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Better Search module.
+ */
+
+function better_search_theme(): array {
+  $theme['better_search_block'] = [
+    'variables' => [
+      'better_search_form' => NULL,
+    ],
+    'template'  => 'better-search-block',
+  ];
+
+  $theme['better_search_result'] = [
+    'variables' => [
+      'form'   => NULL,
+      'params' => NULL,
+      'rows'   => NULL,
+    ],
+    'template'  => 'better-search-result',
+  ];
+
+  return $theme;
+}

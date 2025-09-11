@@ -1,6 +1,6 @@
 ## INTRODUCTION
 
-The Recipe module is a DESCRIBE_THE_MODULE_HERE.
+The Batch Example module is a DESCRIBE_THE_MODULE_HERE.
 
 The primary use case for this module is:
 
@@ -18,6 +18,7 @@ Install as you would normally install a contributed Drupal module.
 See: https://www.drupal.org/node/895232 for further information.
 
 ## CONFIGURATION
+
 - Configuration step #1
 - Configuration step #2
 - Configuration step #3
@@ -27,11 +28,3 @@ See: https://www.drupal.org/node/895232 for further information.
 Current maintainers for Drupal 10:
 
 - FIRST_NAME LAST_NAME (NICKNAME) - https://www.drupal.org/u/NICKNAME
-
-## TESTING
-
-Run ./vendor/bin/phpunit --configuration phpunit.xml path/to/TestFile.php, for example:
-
-```
-./vendor/bin/phpunit --configuration phpunit.xml modules/custom/Recipe/tests/src/Unit/RecipeServicesTest.php
-```

@@ -1,0 +1,6 @@
+better_search_result:
+  path: '/result'
+  defaults:
+    _controller: '\Drupal\better_search\Controller\BetterSearchController::index'
+  requirements:
+    _permission: 'access content'
