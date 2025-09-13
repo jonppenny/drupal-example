@@ -1,0 +1,18 @@
+.better-search-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  label {
+    display: none;
+  }
+
+  .js-form-type-textfield,
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex: 0 0 auto;
+  }
+}

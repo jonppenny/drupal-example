@@ -23,6 +23,7 @@ class BetterSearchBlock extends BlockBase implements BlockPluginInterface {
    */
   public function build(): array {
     return [
+      '#cache'              => ['max-age' => 0],
       '#theme'              => 'better_search_block',
       '#better_search_form' => \Drupal::formBuilder()->getForm('\Drupal\better_search\Form\BetterSearchForm'),
       '#attached'           => [

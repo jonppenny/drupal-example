@@ -29,6 +29,7 @@ class BetterSearchController extends ControllerBase {
     $params = Drupal::request()->query->all();
 
     $build[] = [
+      '#cache'  => ['max-age' => 0],
       '#form'   => $this->formBuilder()->getForm('\Drupal\better_search\Form\BetterSearchForm'),
       '#params' => $params,
       '#rows'   => $this->getSearchResults($params),

@@ -98,4 +98,8 @@ class BetterSearchForm extends FormBase {
     $form_state->setRedirectUrl($url);
   }
 
+  public function getCacheMaxAge(): int {
+    return 0;
+  }
+
 }

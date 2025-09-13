@@ -1,0 +1,10 @@
+better_search:
+  version: 1.0.0
+  css:
+    theme:
+      css/better_search.css: { }
+  js:
+    js/better_search.js: { }
+  dependencies:
+    - core/drupal
+    - core/once
