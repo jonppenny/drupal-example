@@ -10,12 +10,14 @@
   "author": "Jon Penny <jon@jonppenny.co.uk>",
   "private": true,
   "scripts": {
-    "dev": "parcel watch js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
-    "build": "parcel build js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist"
+    "clean": "rimraf ../web/themes/custom/jonppenny/dist",
+    "dev": "npm run clean && parcel watch js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
+    "build": "npm run clean && parcel build js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "rimraf": "^6.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
