@@ -11,8 +11,9 @@ import domReady from './domReady.js';
 gsap.registerPlugin(ScrollTrigger, SplitText, CustomEase);
 
 domReady(async () => {
-    //gsap.set('.page-title', {opacity: 1});
     CustomEase.create('customExpo', '0.16, 1, 0.3, 1');
+
+    /*gsap.set('.page-title', {opacity: 1});
     ScrollTrigger.create({
         trigger: '.page-title',
         start:   'top 80%',
@@ -39,9 +40,9 @@ domReady(async () => {
                 },
             });
         },
-    });
+    });*/
 
-    document.querySelectorAll('.fadeUp').forEach((element) => {
+    gsap.utils.toArray('.fadeUp').forEach((element) => {
         gsap.from(element, {
             opacity:       0,
             y:             50,
@@ -49,8 +50,8 @@ domReady(async () => {
             ease:          'power2.out',
             scrollTrigger: {
                 trigger:       element,
-                start:         'top 80%',
-                end:           'top 50%',
+                start:         'top 90%',
+                end:           'bottom 80%',
                 toggleActions: 'play none none none',
             },
         });
