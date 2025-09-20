@@ -10,8 +10,8 @@
   "author": "Jon Penny <jon@jonppenny.co.uk>",
   "private": true,
   "scripts": {
-    "clean": "rimraf ../web/themes/custom/jonppenny/dist",
-    "dev": "npm run clean && parcel watch js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
+    "clean": "rimraf ../web/themes/custom/jonppenny/dist && rimraf .parcel-cache",
+    "dev": "parcel watch js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
     "build": "npm run clean && parcel build js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist"
   },
   "devDependencies": {
