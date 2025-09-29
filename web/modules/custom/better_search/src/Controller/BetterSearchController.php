@@ -70,23 +70,24 @@ class BetterSearchController extends ControllerBase {
 
         if ($entityType->hasKey('label')) {
           $labelField = $entityType->getKey('label');
-
-          if (!$isConfigEntity) {
-            $query->condition($labelField, '%' . $string . '%', 'LIKE');
-          }
-          $entity_ids = $query->execute();
         }
         elseif ($entityType->hasKey('name')) {
           $labelField = $entityType->getKey('name');
-
-          if (!$isConfigEntity) {
-            $query->condition($labelField, '%' . $string . '%', 'LIKE');
-          }
-          $entity_ids = $query->execute();
         }
         else {
           continue;
         }
+        $keywordSearch = $query->orConditionGroup();
+        $words = explode(' ', $string);
+
+        if (!$isConfigEntity) {
+          foreach ($words as $word) {
+            $w = str_replace(["\r", "\n"], "", $word);
+            $keywordSearch->condition($labelField, '%' . Drupal::database()->escapeLike($w) . '%', 'LIKE');
+          }
+          $query->condition($keywordSearch);
+        }
+        $entity_ids = $query->execute();
 
         if (empty($entity_ids)) {
           continue;

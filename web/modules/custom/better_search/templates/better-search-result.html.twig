@@ -1,8 +1,12 @@
 <h2>{{ 'Search Results'|t }}</h2>
 
+{% if rows %}
 {% for row in rows %}
   <div class="d-flex align-items-center justify-content-between">
     <h3>{{ row['label'] }}</h3>
     <span>{{ row['entity_type'] }}</span>
   </div>
 {% endfor %}
+{% else %}
+  <p>No results, please try a different search term.</p>
+{% endif %}
