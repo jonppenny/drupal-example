@@ -1,0 +1,17 @@
+administer event:
+  title: 'Administer events'
+  restrict access: true
+view event:
+  title: 'View event'
+edit event:
+  title: 'Edit event'
+delete event:
+  title: 'Delete event'
+create event:
+  title: 'Create event'
+view event revision:
+  title: 'View event revision'
+revert event revision:
+  title: 'Revert event revision'
+delete event revision:
+  title: 'Delete event revision'

@@ -1,4 +1,6 @@
 @charset "UTF-8";
 
-@import "./_variables.scss";
-@import "./_root.scss";
+@import "./variables";
+@import "./root";
+
+@import "./search";

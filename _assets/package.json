@@ -12,12 +12,26 @@
   "scripts": {
     "clean": "rimraf ../web/themes/custom/jonppenny/dist && rimraf .parcel-cache",
     "dev": "parcel watch js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
-    "build": "npm run clean && parcel build js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist"
+    "build": "npm run clean && parcel build js/app.js css/app.scss --dist-dir ../web/themes/custom/jonppenny/dist",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-object-assign": "^7.24.1",
+    "@babel/preset-env": "^7.24.3",
+    "@testing-library/jest-dom": "^6.6.3",
     "@parcel/transformer-sass": "^2.15.4",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-wildcard": "^7.0.0",
     "parcel": "^2.12.0",
-    "rimraf": "^6.0.1"
+    "prettier": "3.6.2",
+    "rimraf": "^6.0.1",
+    "jest": "^30.2.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "^6.7.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

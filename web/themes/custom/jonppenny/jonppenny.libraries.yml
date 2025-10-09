@@ -1,7 +1,7 @@
 # Main theme library.
 global:
   js:
-    dist/js/main.js: {}
+    dist/js/app.js: {}
   css:
     theme:
-      dist/css/main.css: {}
+      dist/css/app.css: {}
