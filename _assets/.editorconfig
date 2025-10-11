@@ -1,0 +1,25 @@
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+[*.{go,py,python}]
+indent_style = tab
+indent_size = 4
+
+[*.{c,h,cpp,hpp,cs,php,js,txt,md}]
+indent_size = 4
+
+[*.config.js]
+indent_size = 2
+
+[*.{html,css,scss,sass,xml}]
+indent_size = 2
+
+[*.{yml,yaml,toml}]
+indent_style = tab
+indent_size = 2
