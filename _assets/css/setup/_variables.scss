@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+ * COLOURS
+ */
+$white: #fff;
+$black: #000;
+
+$primary: #F68521 !default;
+$secondary: #262626 !default;
+$ebony-clay: #242D3C;
+$ziggurat: #C3DCE6;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "ebony-clay": $ebony-clay,
+  "ziggurat": $ziggurat,
+) !default;
+
+/*
+ * FONTS
+ */
+$font-primary: "Verdana", sans-serif;
+
+// Bootstrap
+$font-family-sans-serif: $font-primary;
+$font-family-base: $font-family-sans-serif;
+
+/*
+ * MISC
+ */
+$box-shadow-default: 0 0 26px 0 rgba(0, 0, 0, 5%);
+$transition-default-time: 0.2s;
+$transition-medium-time: 0.4s;
+$transition-long-time: 0.8s;
+$ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+// Set input range variable values
+// @see https://getbootstrap.com/docs/5.3/forms/range/
+$form-range-thumb-width: 1.5rem;
