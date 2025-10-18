@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
+$grid-breakpoints: (
+  base: 0,
+  xxxs: 320px,
+  xxs: 375px,
+  xs: 425px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  3xl: 1640px,
+  4xl: 1800px,
+  5xl: 2000px,
+);
+
+$container-max-widths: (
+  xxxs: 90%,
+  xxs: 90%,
+  xs: 90%,
+  sm: 90%,
+  md: 90%,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  3xl: 1440px,
+  4xl: 1540px,
+);
+
 // Import all of Bootstrap. Turn on/off components as required to improve
 // page load speed and reduce the size of the minified css file.
 // @see https://getbootstrap.com/docs/5.2/customize/optimize/
